@@ -9,11 +9,11 @@ window.addEventListener('load', () => {
         confirmButtonText: 'Yes',
         cancelButtonText: 'No',
     }).then((result) => {
+        // Hanya memutar musik jika pengguna mengklik "Yes"
         if (result.isConfirmed) {
-            // Play the music only if the user clicks "Yes"
             document.querySelector('.song').play();
         }
-        // Start the animation timeline regardless of the user's choice
+        // Memulai timeline animasi terlepas dari pilihan pengguna
         animationTimeline();
     });
 });
